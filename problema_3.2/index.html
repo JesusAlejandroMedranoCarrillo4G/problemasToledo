@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.2 — Sueldo Semanal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="bg-blob"></div>
+<div class="card">
+    <a href="../index.html" class="btn-volver">← Inicio</a>
+    <div class="problem-chip">Problema 3.2</div>
+    <h1>💰 Sueldo Semanal</h1>
+    <p class="description">Calcula el sueldo semanal de un trabajador. Las primeras 40 horas se pagan a tarifa normal; cada hora extra (a partir de la 41) se paga al doble.</p>
+
+    <div class="form-group">
+        <label for="horas">Horas trabajadas</label>
+        <input type="number" id="horas" placeholder="Ej: 45" min="0" step="0.5">
+    </div>
+    <div class="form-group">
+        <label for="pago">Pago por hora ($)</label>
+        <input type="number" id="pago" placeholder="Ej: 50.00" min="0" step="0.01">
+    </div>
+
+    <button onclick="calcular()">Calcular Sueldo</button>
+    <div id="resultado" class="resultado"></div>
+
+    <div class="divider"></div>
+    <div class="info-box">
+        <strong>Pseudocódigo:</strong><br>
+        LEER horas, pagoHora<br>
+        SI horas &le; 40 ENTONCES<br>
+        &nbsp;&nbsp;sueldo = horas × pagoHora<br>
+        SINO<br>
+        &nbsp;&nbsp;sueldo = 40 × pagoHora + (horas − 40) × pagoHora × 2<br>
+        FIN SI<br>
+        ESCRIBIR sueldo
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

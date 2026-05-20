@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.1 — ¿Puede Votar?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="bg-blob"></div>
+<div class="card">
+    <a href="../index.html" class="btn-volver">← Inicio</a>
+    <div class="problem-chip">Problema 3.1</div>
+    <h1>🗳️ ¿Puede Votar?</h1>
+    <p class="description">Determina si una persona puede votar en las próximas elecciones con base en su edad. En México se puede votar a partir de los 18 años.</p>
+
+    <div class="form-group">
+        <label for="edad">Edad de la persona</label>
+        <input type="number" id="edad" placeholder="Ej: 17" min="0" max="120">
+    </div>
+
+    <button onclick="calcular()">Verificar</button>
+    <div id="resultado" class="resultado"></div>
+
+    <div class="divider"></div>
+    <div class="info-box">
+        <strong>Pseudocódigo:</strong><br>
+        INICIO<br>
+        &nbsp;&nbsp;LEER edad<br>
+        &nbsp;&nbsp;SI edad &ge; 18 ENTONCES<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;ESCRIBIR "Puede votar"<br>
+        &nbsp;&nbsp;SINO<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;ESCRIBIR "No puede votar"<br>
+        &nbsp;&nbsp;FIN SI<br>
+        FIN
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

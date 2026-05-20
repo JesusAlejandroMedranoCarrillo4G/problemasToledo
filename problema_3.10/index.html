@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.10 — Destino de Vacaciones</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="bg-blob"></div>
+<div class="card">
+    <a href="../index.html" class="btn-volver">← Inicio</a>
+    <div class="problem-chip">Problema 3.10</div>
+    <h1>✈️ Destino de Vacaciones</h1>
+    <p class="description">Determina a qué destino puedes ir de vacaciones con "La Tortuga" según tu presupuesto. El precio cubre ida y vuelta.</p>
+
+    <div class="info-box">
+        <strong>México:</strong> 750 km &nbsp;|&nbsp;
+        <strong>Puerto Vallarta:</strong> 800 km &nbsp;|&nbsp;
+        <strong>Acapulco:</strong> 1,200 km &nbsp;|&nbsp;
+        <strong>Cancún:</strong> 1,800 km
+    </div>
+
+    <div class="form-group">
+        <label for="presupuesto">Tu presupuesto total ($)</label>
+        <input type="number" id="presupuesto" placeholder="Ej: 300.00" min="0" step="0.01">
+    </div>
+    <div class="form-group">
+        <label for="costo_km">Costo por kilómetro ($)</label>
+        <input type="number" id="costo_km" placeholder="Ej: 0.15" min="0" step="0.001">
+    </div>
+
+    <button onclick="calcular()">¿A dónde puedo ir?</button>
+    <div id="resultado" class="resultado"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

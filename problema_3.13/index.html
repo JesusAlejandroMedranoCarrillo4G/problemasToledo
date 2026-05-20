@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.13 — Viaje de Estudios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="bg-blob"></div>
+<div class="card">
+    <a href="../index.html" class="btn-volver">← Inicio</a>
+    <div class="problem-chip">Problema 3.13</div>
+    <h1>🚌 Viaje de Estudios</h1>
+    <p class="description">Determina el costo del pasaje por alumno para el viaje de estudios según el número de participantes.</p>
+
+    <div class="info-box">
+        <strong>Más de 100 alumnos:</strong> $20/c.u. &nbsp;|&nbsp;
+        <strong>50–100:</strong> $35 &nbsp;|&nbsp;
+        <strong>20–49:</strong> $40 &nbsp;|&nbsp;
+        <strong>Menos de 20:</strong> $70
+    </div>
+
+    <div class="form-group">
+        <label for="alumnos">Número de alumnos</label>
+        <input type="number" id="alumnos" placeholder="Ej: 75" min="1" step="1">
+    </div>
+
+    <button onclick="calcular()">Calcular Costo</button>
+    <div id="resultado" class="resultado"></div>
+
+    <div class="divider"></div>
+    <div class="info-box">
+        <strong>Pseudocódigo:</strong><br>
+        LEER alumnos<br>
+        SI alumnos &gt; 100 → costo = 20<br>
+        SINO SI alumnos &ge; 50 → costo = 35<br>
+        SINO SI alumnos &ge; 20 → costo = 40<br>
+        SINO → costo = 70<br>
+        ESCRIBIR costo, total = costo × alumnos
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

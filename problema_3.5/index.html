@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.5 — Persona de Menor Edad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="bg-blob"></div>
+<div class="card">
+    <a href="../index.html" class="btn-volver">← Inicio</a>
+    <div class="problem-chip">Problema 3.5</div>
+    <h1>👥 Persona de Menor Edad</h1>
+    <p class="description">Ingresa el nombre y la edad de tres personas. El algoritmo determinará cuál de ellas es la de menor edad.</p>
+
+    <div class="form-group">
+        <label for="nombre1">Nombre 1</label>
+        <input type="text" id="nombre1" placeholder="Ej: Ana">
+    </div>
+    <div class="form-group">
+        <label for="edad1">Edad 1</label>
+        <input type="number" id="edad1" placeholder="Ej: 25" min="0">
+    </div>
+
+    <div class="form-group">
+        <label for="nombre2">Nombre 2</label>
+        <input type="text" id="nombre2" placeholder="Ej: Luis">
+    </div>
+    <div class="form-group">
+        <label for="edad2">Edad 2</label>
+        <input type="number" id="edad2" placeholder="Ej: 30" min="0">
+    </div>
+
+    <div class="form-group">
+        <label for="nombre3">Nombre 3</label>
+        <input type="text" id="nombre3" placeholder="Ej: María">
+    </div>
+    <div class="form-group">
+        <label for="edad3">Edad 3</label>
+        <input type="number" id="edad3" placeholder="Ej: 20" min="0">
+    </div>
+
+    <button onclick="calcular()">Encontrar el más joven</button>
+    <div id="resultado" class="resultado"></div>
+
+    <div class="divider"></div>
+    <div class="info-box">
+        <strong>Pseudocódigo:</strong><br>
+        LEER nombre1, edad1, nombre2, edad2, nombre3, edad3<br>
+        menor ← nombre1, edadMenor ← edad1<br>
+        SI edad2 &lt; edadMenor → menor ← nombre2, edadMenor ← edad2<br>
+        SI edad3 &lt; edadMenor → menor ← nombre3, edadMenor ← edad3<br>
+        ESCRIBIR menor, edadMenor
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

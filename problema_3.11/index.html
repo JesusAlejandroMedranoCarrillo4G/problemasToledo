@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.11 — Bono por Antigüedad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="bg-blob"></div>
+<div class="card">
+    <a href="../index.html" class="btn-volver">← Inicio</a>
+    <div class="problem-chip">Problema 3.11</div>
+    <h1>🏅 Bono por Antigüedad</h1>
+    <p class="description">Determina el bono que recibirá un empleado de la tienda según sus años de servicio.</p>
+
+    <div class="info-box">
+        <strong>1 año:</strong> $100 &nbsp;|&nbsp;
+        <strong>2 años:</strong> $200 &nbsp;|&nbsp;
+        <strong>3 años:</strong> $300 &nbsp;|&nbsp;
+        <strong>4 años:</strong> $400 &nbsp;|&nbsp;
+        <strong>5 años:</strong> $500 &nbsp;|&nbsp;
+        <strong>Más de 5:</strong> $1,000
+    </div>
+
+    <div class="form-group">
+        <label for="anios">Años de antigüedad</label>
+        <input type="number" id="anios" placeholder="Ej: 3" min="0" step="1">
+    </div>
+
+    <button onclick="calcular()">Calcular Bono</button>
+    <div id="resultado" class="resultado"></div>
+
+    <div class="divider"></div>
+    <div class="info-box">
+        <strong>Pseudocódigo:</strong><br>
+        LEER años<br>
+        SEGÚN años HACER<br>
+        &nbsp;&nbsp;1 → bono = 100 | 2 → 200 | … | 5 → 500<br>
+        &nbsp;&nbsp;sino → bono = 1000<br>
+        ESCRIBIR bono
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

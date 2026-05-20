@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.9 — Póliza de Seguro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="bg-blob"></div>
+<div class="card">
+    <a href="../index.html" class="btn-volver">← Inicio</a>
+    <div class="problem-chip">Problema 3.9</div>
+    <h1>🚗 Póliza de Seguro</h1>
+    <p class="description">Calcula el costo de una póliza de seguro para auto según el tipo de plan y las características del conductor.</p>
+
+    <div class="info-box">
+        <strong>Plan A (Amplia):</strong> $1,200 base &nbsp;|&nbsp; <strong>Plan B (Terceros):</strong> $950 base<br>
+        Cargos adicionales (sobre base): Alcohol +10% | Lentes +5% | Enfermedad +5% | Edad &gt;40 +20%, si no +10%
+    </div>
+
+    <div class="form-group">
+        <label>Tipo de plan</label>
+        <div class="radio-group">
+            <label class="radio-option"><input type="radio" name="plan" value="A" checked> Plan A — Cobertura Amplia ($1,200)</label>
+            <label class="radio-option"><input type="radio" name="plan" value="B"> Plan B — Daños a Terceros ($950)</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="edad">Edad del conductor</label>
+        <input type="number" id="edad" placeholder="Ej: 35" min="16" max="100">
+    </div>
+
+    <div class="form-group">
+        <label>Condiciones del conductor</label>
+        <div class="checkbox-group">
+            <label class="checkbox-option"><input type="checkbox" id="alcohol"> 🍺 Hábito de beber alcohol</label>
+            <label class="checkbox-option"><input type="checkbox" id="lentes"> 👓 Usa lentes</label>
+            <label class="checkbox-option"><input type="checkbox" id="enfermedad"> 🏥 Padece enfermedad (cardíaca, diabetes, etc.)</label>
+        </div>
+    </div>
+
+    <button onclick="calcular()">Calcular Costo de Póliza</button>
+    <div id="resultado" class="resultado"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
